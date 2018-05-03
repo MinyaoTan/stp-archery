@@ -10,11 +10,10 @@ html {
   width: 10%;
   left: 5rem;
   position: absolute;
-  top: 6rem;
+  top: 4rem;
 }
 
 header {
-  margin-top: 3rem;
   height: 100%;
   background-color: #B5FF91;
 }
@@ -45,9 +44,10 @@ header {
 }
 
 .link {
-  margin-left: 1rem;
-  margin-right: 1rem;
   color: saddlebrown;
+  padding: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 a {
@@ -56,13 +56,12 @@ a {
 }
 
 a:hover {
-  color: blue;
-}
-
-.pic {
-  display: block;
-  margin: 5rem;
-  margin-left: 5rem;
+  color: royalblue;
+  border-style: solid;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  transition: all 0.5s ease 0s;
 }
 
 .intro {
@@ -106,7 +105,7 @@ a:hover {
 
 .about .row {
   background-color: white;
-  margin-left: 12rem;
+  margin-left: 5rem;
 }
 
 .instructors .row {
@@ -191,9 +190,69 @@ footer nav {
   margin-left: 8rem;
 }
 
+.fa:hover {
+  top: 1rem;
+  transition: all 0.5s ease 0s;
+}
+
 .copyright {
   background-color: yellowgreen;
   text-align: center;
   padding: 2rem;
   color: white;
+}
+
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+  display: block;
+  margin: 5rem;
+  margin-left: 5rem;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 10s ease infinite;
+}
+
+.slide-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.number {
+  color: white;
+  position: absolute;
+  top: 16rem;
+  left: 6rem;
+}
+
+.slide img {
+  width: 40rem;
+  height: 30rem;
+}
+
+.slide img:hover {
+  width: 42rem;
+  height: 32rem;
+  border-style: double;
+  transition: all 1s ease 0s;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
 }
